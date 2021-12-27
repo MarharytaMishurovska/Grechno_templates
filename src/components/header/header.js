@@ -45,9 +45,7 @@ class Header extends Component {
                       у всіх випадках життя
                   </h3>
                 </div>
-                <div className='header-button'>
-                  <button className='button-info-main' name=''>ДИВИТИСЯ КАТАЛОГ</button>
-                </div>
+                <button className='button-info-main' name=''>ДИВИТИСЯ КАТАЛОГ</button>
               </Col>
               <Col>
                 <HeaderSlider/>
