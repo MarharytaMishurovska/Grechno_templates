@@ -1,11 +1,7 @@
 
 
 import './catalog-previev.css'
-
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
+import { Container, Row, Col, Card} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import shopper_one from '../catalog-previev/catalog-previev-img/shopper-1.png';

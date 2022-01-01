@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+.footer {
+  width: 1441px;
+  height: 185px;
+
+  background-color: $background-main;
+  button {
+    width: $button-width;
+    height: $button-height;
+    text-decoration: none;
+    color: $button-color;
+    background-color: #198E95;
+    border: none;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+
+

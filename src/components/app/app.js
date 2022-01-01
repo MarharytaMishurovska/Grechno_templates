@@ -1,10 +1,12 @@
 
 import './app.css';
 
+import HeaderInfo from '../header-info/header-info';
 import Header from '../header/header';
 import SidePanel from '../side-panel/side-panel';
 import CatalogPreviev from '../catalog-previev/catalog-previev';
-import InfoPanel from '../info-panel/info-panel';
+// import InfoPanel from '../info-panel/info-panel';
+import Footer from '../footer/footer';
 
 
 function App() {
@@ -12,10 +14,12 @@ function App() {
     <div className="app" id='main'>
         <Header />
         <SidePanel />
+        <HeaderInfo />
+        
     
         <CatalogPreviev />
 
-        <InfoPanel />
+        {/* <InfoPanel /> */}
 
         {/* <div className="search-panel">
             <SearchPanel/>
@@ -24,6 +28,7 @@ function App() {
         
         <EmployeesList/>
         <EmployeesAddForm/> */}
+        <Footer/>
     </div>
   )
 }

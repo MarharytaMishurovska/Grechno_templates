@@ -1,4 +1,4 @@
-
+import './info-panel.scss';
 
 import handmadeImg from './info-panel-img/handmade.png';
 import priceImg from './info-panel-img/price.png';
@@ -7,6 +7,7 @@ import speedImg from './info-panel-img/speed.png';
 
 const InfoPanel = () => {
   return (
+    <>
       <div className='offset'>
         <div className='offset-item'>
           <div className='offset-item-img'>
@@ -45,6 +46,7 @@ const InfoPanel = () => {
           </div>
         </div>
       </div>
+    </>
   )
 }
 

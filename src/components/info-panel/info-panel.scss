@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.offset {
+  position: absolute;
+
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+
+  background: #ECFAF5;
+
+  .offset-item {
+    display: flex;
+    flex-direction: column;
+
+    height: 154;
+    width: 250;
+
+    h3 {
+      color: $accent-text-color;
+    }
+  }
+}

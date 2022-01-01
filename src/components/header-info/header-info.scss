@@ -1,0 +1,67 @@
+.app-header {
+  font-family: 'Montserrat', sans-serif;
+  color: #43302E;
+}
+
+.nav-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  h1 {
+    color: #198E95;
+    padding-top: 20%;
+    font-size: 96px;
+    font-weight: bolder;
+    margin-bottom: 41px;
+  }
+  h3 {
+    width: 527px;
+    height: 88px;
+  }
+}
+
+.header-info {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  .header-logo {
+    img {
+      width: 300px;
+      height: auto;
+    }
+  }
+}
+
+.nav-container {
+  .nav-info-img {
+    width: 100%;
+  }
+}
+
+.button-info-main {
+  width: 276px;
+  height: 58px;
+  margin-top: 41px;
+  text-decoration: none;
+  color: white;
+  background-color: #198E95;
+  border: none;
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  &:hover{
+    background: #005358;
+    border: none;
+    box-shadow: 0px 4px 30px rgba(0, 83, 88, 0.2);
+    border-radius: 10px;
+  }
+  &:active{
+    background: #005358;
+    border: none;
+    box-shadow: 0px 4px 30px rgba(0, 83, 88, 0.2);
+    border-radius: 10px;
+  }
+}

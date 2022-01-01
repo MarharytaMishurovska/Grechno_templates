@@ -1,0 +1,30 @@
+
+.ant-carousel {
+  width: 700px;
+  height: auto;
+  .slick-slider{
+    
+    .slick-dots {
+      .slick-dots-bottom {
+        justify-content:start;
+      }
+      li {
+        width: 40px;
+        height: 4px;
+        margin: 5px;        
+        }
+        button {
+          background-color: white;
+      }
+      .slick-active {
+        button {
+          background: white;
+          width: 45px;
+        }
+      }    
+    }
+  }
+}
+
+
+@import '~antd/dist/antd.css';

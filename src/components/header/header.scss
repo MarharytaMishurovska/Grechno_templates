@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+
+.header {
+  height: 100px;
+  background-color: $background-main;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.group-item {
+  width: 60px;
+  height: auto;
+  background-color: none;
+  border: 1px solid $accent-text-color;
+}

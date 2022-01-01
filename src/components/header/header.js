@@ -1,63 +1,39 @@
-import { Component } from 'react';
+import './header.scss'
 
-import './header.css';
+import { Component, Fragment } from 'react';
+import { Container, Row, Col} from 'react-bootstrap';
 
-import HeaderSlider from '../header-slider/header-slider';
 
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import logo from '../header/header-img/logo.png';
-import basket from '../header/header-img/basket.svg'
 
 
 class Header extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
 
     }
   }
 
-  openModal = (e) => {
-    e.target = alert('Empty')
-  }
-
   render () {
     return (
-      <header>
-        <div className='app-header'>
-          <Container className='header-main'>
+        <Fragment className='header'>
+          <Container>
             <Row>
-              <Col>
-                <div className='header-info'>
-                  <div className='header-logo'><img src={logo} alt='logo'/></div> 
-                  <div className='header-basket'>
-                    <img src={basket} alt='basket' onClick={this.openModal}/>
-                  </div>
-                </div>
-                <div className='header-text'>
-                  <h1>Grechno</h1>
-                  <h3>Сумки, створені бути поруч 
-                      у всіх випадках життя
-                  </h3>
-                </div>
-                <button className='button-info-main' name=''>ДИВИТИСЯ КАТАЛОГ</button>
+              <Col md='3'>
+                <img alt=' '></img>
               </Col>
-              <Col>
-                <HeaderSlider/>
+              <Col className='button-group' md='9'>
+                <button className='group-item'>1</button>
+                <button className='group-item'>2</button>
+                <button className='group-item'>3</button>
               </Col>
             </Row>
           </Container>
-        </div>
-      </header>
+        </Fragment>
     )
   }
+
 }
-
-
 
 export default Header;
