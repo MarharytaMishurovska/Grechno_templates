@@ -4,6 +4,9 @@ import { Component, Fragment } from 'react';
 import { Container, Row, Col} from 'react-bootstrap';
 
 
+import bascket from './header-img/bascket.svg';
+import logo from './header-img/logo.png';
+
 
 
 
@@ -17,16 +20,24 @@ class Header extends Component {
 
   render () {
     return (
-        <Fragment className='header'>
-          <Container>
-            <Row>
-              <Col md='3'>
-                <img alt=' '></img>
+        <Fragment >
+          <Container className='header'>
+            <Row className='header-buttons' >
+              <Col className='logo'>
+                <img src={logo} alt='' md={1}/>
               </Col>
-              <Col className='button-group' md='9'>
-                <button className='group-item'>1</button>
-                <button className='group-item'>2</button>
-                <button className='group-item'>3</button>
+              <Col className='button-group' md={6}>
+                <button className='group-item'>Шопери</button>
+                <button className='group-item'>Авоськи</button>
+                <button className='group-item'>Набори</button>
+                <button className='group-item'>Оновлення</button>
+                <button className='group-item'>Розпродаж</button>
+              </Col>
+              <Col className='info-group'  md={3}>
+                <button className='info-item'>зв’язатися</button>
+                <button className='info-bascket'>
+                  <img src={bascket} alt=''/>
+                </button>
               </Col>
             </Row>
           </Container>

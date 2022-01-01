@@ -1,19 +1,90 @@
 @import '../../variables.scss';
 
 .header {
-  height: 100px;
+
   background-color: $background-main;
 }
 
-.button-group {
+.header-buttons {
+  height: 112px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  .button-group {
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bolder;
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    color: #43302E;
+    .group-item {
+      background-color: $background-main;
+      border: none;
+      border-radius: $border-radius;
+      &:hover{
+        border: 2px solid $accent-text-color;
+        border-radius: $border-radius;
+        background-color: $background-main;
+        color: $accent-text-color;
+      } 
+    }
+  }
 }
 
-.group-item {
-  width: 60px;
-  height: auto;
-  background-color: none;
-  border: 1px solid $accent-text-color;
+.logo {
+  align-items: center;
 }
+
+.info-group {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  display: flex;
+  justify-content: space-evenly;
+
+  .info-item {
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: #198E95;
+    border: $accent-text-color;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.25);
+    border-radius: $border-radius;
+    text-transform: uppercase;
+    &:hover{
+      border: 2px solid $accent-text-color;
+      border-radius: $border-radius;
+      background-color: $background-main;
+      color: $accent-text-color;
+    } 
+    &:active {
+      background: $accent-text-color;
+      border: none;
+      box-shadow: 0px 4px 30px rgba(0, 83, 88, 0.2);
+      border-radius: $border-radius;
+      color: white;
+
+    }
+  }
+
+  .info-bascket {
+    width: 78px;
+    height: 50px;
+    border: none;
+    box-sizing: border-box;
+    background-color: $background-main;
+    border-radius: $border-radius;
+    &:hover{
+      border: 2px solid $accent-text-color;
+      border-radius: $border-radius;
+      background: $accent-text-color;
+
+      color: $accent-text-color;
+    } 
+  }
+}
+
+
+
