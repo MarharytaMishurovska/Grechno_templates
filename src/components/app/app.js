@@ -1,10 +1,11 @@
 
-import './app.css';
+import './app.scss';
 
 import HeaderInfo from '../header-info/header-info';
 import Header from '../header/header';
 import SidePanel from '../side-panel/side-panel';
-import CatalogPreviev from '../catalog-previev/catalog-previev';
+import Sales from '../sales/sales';
+// import CatalogPreviev from '../catalog-previev/catalog-previev';
 // import InfoPanel from '../info-panel/info-panel';
 import Footer from '../footer/footer';
 
@@ -12,12 +13,15 @@ import Footer from '../footer/footer';
 function App() {
   return (
     <div className="app" id='main'>
-        <Header />
-        <SidePanel />
+        <SidePanel/>
+        
+        <Header />        
         <HeaderInfo />
+
+        <Sales/>
         
     
-        <CatalogPreviev />
+        {/* <CatalogPreviev /> */}
 
         {/* <InfoPanel /> */}
 
