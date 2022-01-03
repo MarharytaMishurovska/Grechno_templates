@@ -1,4 +1,4 @@
-import './side-panel.css';
+import './side-panel.scss';
 
 import facebook from '../side-panel/side-panel-img/facebook.svg';
 import instagram from '../side-panel/side-panel-img/instagram.svg'
