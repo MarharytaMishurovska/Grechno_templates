@@ -1,0 +1,48 @@
+@import '../../variables.scss';
+
+.panels {
+  
+  height: 580px;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  
+}
+.text-item {
+  width: 59px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+
+.panel-img {
+  margin: 23px;
+  transition: transform .2s;
+  width: 380px;
+  height: 430px;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+h4 {
+  color: $accent-text-color;
+  font-size: 38px;
+}
+.left-text {
+  transform: rotate(-90deg);
+  padding-right: 260px;
+}
+.right-text {
+  transform: rotate(-90deg);
+  padding-right: 260px;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+}
